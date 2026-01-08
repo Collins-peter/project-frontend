@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.trackPackageView {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #28443f;
+}
+.trackPackageView .trackPackageContainer {
+    width: 35%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    backdrop-filter: blur(10px) saturate (120%);
+    box-shadow: 0 6px 20px rgba(2, 6,23, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+.trackPackageContainer h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+form {
+    border: solid 1px #F2FD7D;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+form .errorMsg {
+    height: 25px;
+    font-size: larger;
+    background: rgb(212, 48, 48);
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.trackPackageContainer .dataInfo {
+    border: solid 1px #fff;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.trackPackageContainer .dataInfo p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.trackPackageContainer .dataInfo p strong{
+    color: #fff;
+}
+.trackPackageContainer .dataInfo p h4{
+    margin-left: 5px;
+    width: 100%;
+    padding: 10px 10px;
+    color: #F2FD7D;
+}
+
+.dataInfo button {
+    border: solid 1px #F2FD7D;
+    border-radius: 10px;
+    height: 25px;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F2FD7D;
+    background-color: #28443f;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.dataInfo button:hover {
+    background-color: #F2FD7D;
+    color: #28443f;
+}
+
+
+@media (max-width: 1000px) {
+    .trackPackageContainer {
+        width: 88% !important;
+    }
+}

@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.statusView {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #28443f;
+}
+.statusView .statusContainer {
+    width: 35%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px) saturate (120%);
+    box-shadow: 0 6px 20px rgba(2, 6,23, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+.statusContainer h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    color: #fff;
+}
+.statusContainer h4 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+h4 div a{
+    border: solid 1px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: #F2FD7D;
+    transition: 0.5s;
+    text-decoration: none;
+}
+h4 div a:hover {
+    background: #F2FD7D;
+    color: #28443f;
+}
+.statusContainer form {
+    border: solid 1px #F2FD7D;
+    padding: 10px 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: larger;
+}
+form div select {
+    height: 30px;
+    border-radius: 10px;
+    font-size: large;
+    outline: none;
+}
+form .errorMsg {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgb(231, 32, 32);
+    border-radius: 10px;
+}
+form .successMsg {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: green;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1000px) {
+    .statusView .statusContainer {
+        width: 88% !important;
+    }
+}
