@@ -3,7 +3,7 @@ import axios from "axios";
 
 //CREATE AXIOS BASE CONFIGURATION
 const api = axios.create({
-    baseURL: "https://project-backend-production-3009.up.railway.app",
+    baseURL: import.meta.env.VITE_API_URL,
     headers: {
         "Content-Type" : "application/json"
     },
