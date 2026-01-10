@@ -40,7 +40,7 @@ export const packageService = {
         } catch (error) {
             return {
                 success: false,
-                error: error.response?.data?.message || "Tracking Number not Found",
+                error: error.response?.data?.message || "error occurred",
                 status: error.response?.status || 500
             }
         }
